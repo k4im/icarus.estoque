@@ -30,6 +30,7 @@ jobs:
       run: dotnet build --no-restore
       working-directory: ./estoque.service
     
+    
     - name: Deploy
       uses: appleboy/ssh-action@master
       with:
