@@ -29,3 +29,12 @@ jobs:
     - name: Build API 
       run: dotnet build --no-restore
       working-directory: ./estoque.service
+
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          echo "hello"
