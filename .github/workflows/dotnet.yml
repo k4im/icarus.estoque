@@ -38,6 +38,6 @@ jobs:
       with:
         command: ls -a
         host: ${{ secrets.HOST }}
-        username: github
+        username: ${{ secrets.HOSTNAME }}
         port: ${{ secrets.PORT }}
         privateKey: ${{ secrets.PRIVATE_KEY}}
