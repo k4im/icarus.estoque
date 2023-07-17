@@ -34,12 +34,10 @@ jobs:
       working-directory: ./estoque.service
       
     - name: Deploy
-      uses: appleboy/ssh-action@v0.1.4
+      uses: garygrossgarten/github-action-ssh@release
       with:
+        command: ls -a
         host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        passphrase: ${{ secrets.PWD }}
-        key: ${{ secrets.PRIVATE_KEY }}
+        username: github
         port: ${{ secrets.PORT }}
-        script: |
-          echo "hello"
+        privateKey: ${{ secrets.PRIVATE_KEY}}
