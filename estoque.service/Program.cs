@@ -1,6 +1,3 @@
-using estoque.service.AssynComm;
-using estoque.service.Worker;
-
 var builder = WebApplication.CreateBuilder(args);
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
 // Add services to the container.
@@ -42,11 +39,9 @@ builder.Services.AddSwaggerGen(option =>
 });
 builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetEntryAssembly());
 #endregion
-// builder.Services.AddDbContext<DataContext>(opt => opt.UseMySql(builder.Configuration.GetConnectionString("docker"), serverVersion));
-builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Data"));
 builder.Services.AddScoped<IRepoEstoque, RepoEstoque>();
 builder.Services.AddScoped<IMessagePublisher, MessagePublisher>();
-builder.Services.AddScoped<GrayLogger>();
+builder.Services.AddScoped<Logger>();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 builder.Services.AddHostedService<RabbitMQBackground>();
 builder.Services.AddScoped<IMessageConsumer, MessageConsumer>();

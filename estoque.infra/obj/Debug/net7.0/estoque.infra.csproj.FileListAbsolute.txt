@@ -1,0 +1,15 @@
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/bin/Debug/net7.0/estoque.infra.deps.json
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/bin/Debug/net7.0/estoque.infra.dll
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/bin/Debug/net7.0/estoque.infra.pdb
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/bin/Debug/net7.0/estoque.domain.dll
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/bin/Debug/net7.0/estoque.domain.pdb
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/Debug/net7.0/estoque.infra.csproj.AssemblyReference.cache
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/Debug/net7.0/estoque.infra.GeneratedMSBuildEditorConfig.editorconfig
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/Debug/net7.0/estoque.infra.AssemblyInfoInputs.cache
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/Debug/net7.0/estoque.infra.AssemblyInfo.cs
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/Debug/net7.0/estoque.infra.csproj.CoreCompileInputs.cache
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/Debug/net7.0/estoque.infra.csproj.CopyComplete
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/Debug/net7.0/estoque.infra.dll
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/Debug/net7.0/refint/estoque.infra.dll
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/Debug/net7.0/estoque.infra.pdb
+/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/Debug/net7.0/ref/estoque.infra.dll

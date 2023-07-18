@@ -1,0 +1,16 @@
+global using System.Text;
+global using estoque.domain.Entity;
+global using estoque.infra.AssynComm.Extensions;
+global using Microsoft.Extensions.Configuration;
+global using Newtonsoft.Json;
+global using RabbitMQ.Client;
+global using RabbitMQ.Client.Events;
+global using estoque.infra.Repository;
+global using estoque.infra.Data;
+global using estoque.infra.AssynComm;
+global using estoque.domain.Entity;
+global using estoque.domain.Reponses;
+global using AutoMapper;
+global using Microsoft.EntityFrameworkCore;
+global using Serilog;
+global using Serilog.Sinks.Graylog;

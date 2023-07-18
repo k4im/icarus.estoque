@@ -1,7 +1,3 @@
-
-using AutoMapper;
-using estoque.service.AssynComm;
-
 namespace estoque.service.Controllers
 {
     [ApiController]
@@ -9,9 +5,9 @@ namespace estoque.service.Controllers
     public class ProdutosController : ControllerBase
     {
         readonly IRepoEstoque _repo;
-        readonly GrayLogger _logger;
+        readonly Logger _logger;
 
-        public ProdutosController(IRepoEstoque repo, GrayLogger logger)
+        public ProdutosController(IRepoEstoque repo, Logger logger)
         {
             _repo = repo;
             _logger = logger;
