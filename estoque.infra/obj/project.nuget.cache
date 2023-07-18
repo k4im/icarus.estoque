@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "K+nYh6G55Ms5HtzcFcUuiR242kwH3lz1eMbLzGWuRP14f3aJD73Gt4mA0F43ZaV/mraw5XwG4IOpiAfUvaIjmA==",
+  "dgSpecHash": "DNhWYNd5GsiBqDrivot93nKEZd2cDnykKEP+xi1GhnD1i8fySOUx9T1jPTEsDqkguQKvvXlVF5x6fZPQEPk04w==",
   "success": true,
   "projectFilePath": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/estoque.infra.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/oem/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/home/oem/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/oem/.nuget/packages/rabbitmq.client/6.5.0/rabbitmq.client.6.5.0.nupkg.sha512",
+    "/home/oem/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/home/oem/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
