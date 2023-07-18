@@ -63,7 +63,7 @@ namespace estoque.infra.AssynComm
         }
         string serializarObjeto(Produto model)
         {
-            var produtoModel = _mapper.Map<Produto, ProdutoDisponivel>(model);
+            var produtoModel = new ProdutoDisponivel { Id = model.Id, Nome = model.Nome, Quantidade = model.Quantidade };
             return JsonConvert.SerializeObject(produtoModel);
         }
         void RabbitMQFailed(object state, ShutdownEventArgs e)
