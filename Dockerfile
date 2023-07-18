@@ -10,15 +10,19 @@ RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /
 USER appuser
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+ARG configuration=Release
 WORKDIR /src
-COPY ["estoque.service.csproj", "./"]
-RUN dotnet restore "estoque.service.csproj"
+COPY ["estoque.service/estoque.service.csproj", "estoque.service/"]
+COPY ["estoque.domain/estoque.domain.csproj", "estoque.domain/"]
+COPY ["estoque.infra/estoque.infra.csproj", "estoque.infra/"]
+RUN dotnet restore "estoque.service/estoque.service.csproj"
 COPY . .
-WORKDIR "/src/."
-RUN dotnet build "estoque.service.csproj" -c Release -o /app/build
+WORKDIR "/src/estoque.service"
+RUN dotnet build "estoque.service.csproj" -c $configuration -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "estoque.service.csproj" -c Release -o /app/publish /p:UseAppHost=false
+ARG configuration=Release
+RUN dotnet publish "estoque.service.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
