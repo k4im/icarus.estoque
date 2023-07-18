@@ -1,6 +1,4 @@
-global using System.Text.RegularExpressions;
 global using Microsoft.EntityFrameworkCore;
-global using estoque.service.Models;
 global using System.Reflection;
 global using System.Text;
 global using estoque.service.Data;
@@ -21,3 +19,6 @@ global using Newtonsoft.Json;
 global using RabbitMQ.Client;
 global using RabbitMQ.Client.Events;
 global using AutoMapper;
+global using estoque.domain.Entity;
+global using estoque.domain.Reponses;
+global using estoque.domain;

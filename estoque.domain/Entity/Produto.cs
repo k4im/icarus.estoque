@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
-using estoque.service.Exceptions;
+using System.Text.RegularExpressions;
 
-namespace estoque.service.Models
+namespace estoque.domain.Entity
 {
     public class Produto
     {
@@ -37,8 +37,8 @@ namespace estoque.service.Models
 
         string verificarNome(string nome)
         {
-            if (string.IsNullOrEmpty(nome)) throw new CampoVazio("O nome não pode estar vazio!");
-            if (!Regex.IsMatch(nome, @"^[a-zA-Z ]+$")) throw new CaracterInvalido("O nome não pode conter caracteres especiais");
+            if (string.IsNullOrEmpty(nome)) throw new Exception("O nome não pode estar vazio!");
+            if (!Regex.IsMatch(nome, @"^[a-zA-Z ]+$")) throw new Exception("O nome não pode conter caracteres especiais");
             return nome;
         }
         public void diminuirQuantidade(int quantidade)

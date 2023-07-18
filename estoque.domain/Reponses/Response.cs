@@ -1,4 +1,4 @@
-namespace estoque.service.Models
+namespace estoque.domain.Reponses
 {
     public class Response<T>
     {
