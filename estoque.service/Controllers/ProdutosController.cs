@@ -1,7 +1,3 @@
-
-using AutoMapper;
-using estoque.service.AssynComm;
-
 namespace estoque.service.Controllers
 {
     [ApiController]

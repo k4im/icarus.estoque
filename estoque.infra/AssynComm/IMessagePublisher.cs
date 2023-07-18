@@ -1,6 +1,3 @@
-
-using estoque.domain.Entity;
-
 namespace estoque.infra.AssynComm
 {
     public interface IMessagePublisher

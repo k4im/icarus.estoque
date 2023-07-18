@@ -1,11 +1,3 @@
-using System.Text;
-using estoque.domain.Entity;
-using estoque.infra.AssynComm.Extensions;
-using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
-
 namespace estoque.infra.AssynComm
 {
     public class MessageConsumer : MessageConsumerExtension, IMessageConsumer

@@ -1,4 +1,4 @@
-namespace estoque.service.Repository
+namespace estoque.infra.Repository
 {
     public class RepoEstoque : IRepoEstoque
     {

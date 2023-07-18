@@ -1,11 +1,3 @@
-using System.Text;
-using AutoMapper;
-using estoque.domain.Entity;
-using estoque.infra.AssynComm.Extensions;
-using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
-using RabbitMQ.Client;
-
 namespace estoque.infra.AssynComm
 {
     public class MessagePublisher : MessagePublisherExtension, IMessagePublisher

@@ -38,6 +38,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\estoque.domain\estoque.domain.csproj" />
+    <ProjectReference Include="..\estoque.infra\estoque.infra.csproj" />
   </ItemGroup>
 
 </Project>
