@@ -21,4 +21,5 @@ global using RabbitMQ.Client.Events;
 global using AutoMapper;
 global using estoque.domain.Entity;
 global using estoque.domain.Reponses;
+global using estoque.domain.Mapper;
 global using estoque.domain;

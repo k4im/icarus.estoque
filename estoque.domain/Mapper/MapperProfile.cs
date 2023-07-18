@@ -1,7 +1,9 @@
 using AutoMapper;
+using estoque.domain.Entity;
 
-namespace estoque.service.Mapper
+namespace estoque.domain.Mapper
 {
+
     public class MapperProfile : Profile
     {
         public MapperProfile()
