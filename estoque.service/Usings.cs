@@ -1,15 +1,12 @@
 global using Microsoft.EntityFrameworkCore;
 global using System.Reflection;
 global using System.Text;
-global using estoque.service.Data;
 global using Microsoft.AspNetCore.Authentication.JwtBearer;
 global using Microsoft.IdentityModel.Tokens;
 global using Microsoft.OpenApi.Models;
 global using Swashbuckle.AspNetCore.Filters;
 global using Microsoft.AspNetCore.Mvc;
-global using Serilog;
-global using Serilog.Sinks.Graylog;
-global using estoque.service.Logger;
+global using estoque.infra.Log;
 global using System.Security.Claims;
 global using estoque.domain.Entity;
 global using estoque.infra.AssynComm;

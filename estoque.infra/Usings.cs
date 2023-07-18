@@ -12,3 +12,5 @@ global using estoque.domain.Entity;
 global using estoque.domain.Reponses;
 global using AutoMapper;
 global using Microsoft.EntityFrameworkCore;
+global using Serilog;
+global using Serilog.Sinks.Graylog;

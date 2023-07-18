@@ -1,10 +1,11 @@
-namespace estoque.service.Logger
+namespace estoque.infra.Log
 {
-    public class GrayLogger
+    public class Logger
     {
+
         readonly IConfiguration _config;
         readonly Serilog.Core.Logger _logger;
-        public GrayLogger(IConfiguration config)
+        public Logger(IConfiguration config)
         {
             _config = config;
             _logger = new LoggerConfiguration()
