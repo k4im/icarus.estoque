@@ -12,3 +12,4 @@ global using estoque.domain.Entity;
 global using estoque.infra.AssynComm;
 global using estoque.infra.Repository;
 global using estoque.service.Worker;
+global using estoque.service.Extensions;
