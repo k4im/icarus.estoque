@@ -3,13 +3,13 @@ namespace estoque.infra.AssynComm
     public class MessagePublisher : MessagePublisherExtension, IMessagePublisher
     {
         readonly IConfiguration _config;
-        IConnection _connection;
-        IModel _channel;
-        IMapper _mapper;
-        public MessagePublisher(IConfiguration config, IMapper mapper)
+        readonly IConnection _connection;
+        readonly IModel _channel;
+        readonly HttpContent _content;
+        public MessagePublisher(IConfiguration config, HttpContent content)
         {
             _config = config;
-            _mapper = mapper;
+            _content = content;
             // Definindo a ConnectionFactory, passando o hostname, user, pwd, port
             var factory = new ConnectionFactory()
             {
@@ -23,7 +23,6 @@ namespace estoque.infra.AssynComm
             {
                 //Criando a conexão ao broker
                 _connection = factory.CreateConnection();
-
                 // Criando o modelo da conexão
                 _channel = _connection.CreateModel();
                 declararFilas(_channel);
@@ -33,16 +32,17 @@ namespace estoque.infra.AssynComm
             {
                 Console.WriteLine($"--> Não foi possivel se conectar com o Message Bus: {e.Message}");
             }
+
         }
         public void publicarProduto(Produto produto)
-            => enviarEvento(serializarObjeto(produto), routingKeyAdicionado);
+            => EnviarEvento(SerializarObjeto(produto), routingKeyAdicionado);
 
         public void atualizarProduto(Produto produto)
-            => enviarEvento(serializarObjeto(produto), routingKeyAtualizado);
+            => EnviarEvento(SerializarObjeto(produto), routingKeyAtualizado);
         public void deletarProduto(Produto produto)
-            => enviarEvento(serializarObjeto(produto), routingKeyDeletado);
+            => EnviarEvento(SerializarObjeto(produto), routingKeyDeletado);
 
-        void enviarEvento(string evento, string routingKey)
+        void EnviarEvento(string evento, string routingKey)
         {
             if (_channel.IsOpen)
             {
@@ -61,9 +61,10 @@ namespace estoque.infra.AssynComm
                 Console.WriteLine("--> Evento enviado ao RabbitMQ");
             }
         }
-        string serializarObjeto(Produto model)
+        string SerializarObjeto(Produto model)
         {
-            var produtoModel = new ProdutoDisponivel { Id = model.Id, Nome = model.Nome, Quantidade = model.Quantidade };
+            var correlationID = _content.Headers.GetValues("X-CorrelationID").FirstOrDefault();
+            var produtoModel = new Envelope(model.Id, model.Nome, model.Quantidade, correlationID);
             return JsonConvert.SerializeObject(produtoModel);
         }
         void RabbitMQFailed(object state, ShutdownEventArgs e)

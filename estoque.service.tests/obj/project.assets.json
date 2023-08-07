@@ -9649,11 +9649,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.service.tests/estoque.service.tests.csproj",
+      "projectUniqueName": "/home/oem/github/icarus/icarus.estoque/estoque.service.tests/estoque.service.tests.csproj",
       "projectName": "estoque.service.tests",
-      "projectPath": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.service.tests/estoque.service.tests.csproj",
+      "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.service.tests/estoque.service.tests.csproj",
       "packagesPath": "/home/oem/.nuget/packages/",
-      "outputPath": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.service.tests/obj/",
+      "outputPath": "/home/oem/github/icarus/icarus.estoque/estoque.service.tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/oem/.nuget/NuGet/NuGet.Config"
@@ -9668,8 +9668,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/oem/github/icarus-sistema/icarus.estoque/estoque.service/estoque.service.csproj": {
-              "projectPath": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.service/estoque.service.csproj"
+            "/home/oem/github/icarus/icarus.estoque/estoque.service/estoque.service.csproj": {
+              "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.service/estoque.service.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5wmaFXg+awI0b9Cqcz02Xze3UFtKF62Touqsl+X6Y+gjNnebUAt4i8k7Dob56aTUCVHv/9ZNvnD2UgJWhdJsFA==",
+  "dgSpecHash": "CaSA6zAg28OFLUbeT5dHzzMA1S2OUcjCKrxpLTyrqK86IudaU7YH1MZQBunl2jpxNoOwYC1bhwnsJABJ4ipr3g==",
   "success": true,
-  "projectFilePath": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.service.tests/estoque.service.tests.csproj",
+  "projectFilePath": "/home/oem/github/icarus/icarus.estoque/estoque.service.tests/estoque.service.tests.csproj",
   "expectedPackageFiles": [
     "/home/oem/.nuget/packages/autofac/6.0.0/autofac.6.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/autofac.extras.moq/6.1.0/autofac.extras.moq.6.1.0.nupkg.sha512",

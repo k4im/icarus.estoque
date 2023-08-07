@@ -10,6 +10,6 @@ namespace estoque.infra.Repository
         Task<bool> removerProduto(int? id);
 
         Task<bool> atualizarProduto(int? id, Produto model);
-        Task atualizarEstoque(ProjetoDTO model);
+        Task atualizarEstoque(EnvelopeRecebido model);
     }
 }

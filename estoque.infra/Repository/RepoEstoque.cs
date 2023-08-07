@@ -132,7 +132,7 @@ namespace estoque.infra.Repository
             }
         }
 
-        public async Task atualizarEstoque(ProjetoDTO model)
+        public async Task atualizarEstoque(EnvelopeRecebido model)
         {
             try
             {

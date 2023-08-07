@@ -51,7 +51,7 @@ namespace estoque.infra.AssynComm
 
                         // transformando o body em string
                         var message = Encoding.UTF8.GetString(body);
-                        var projeto = JsonConvert.DeserializeObject<ProjetoDTO>(message);
+                        var projeto = JsonConvert.DeserializeObject<EnvelopeRecebido>(message);
 
                         // Estará realizando a operação de adicição dos projetos no banco de dados
                         for (int i = 0; i <= channel.MessageCount("atualizar.estoque"); i++)
