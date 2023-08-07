@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = estoque.domain
-build_property.ProjectDir = /home/oem/github/icarus-sistema/icarus.estoque/estoque.domain/
+build_property.ProjectDir = /home/oem/github/icarus/icarus.estoque/estoque.domain/

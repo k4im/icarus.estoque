@@ -1700,11 +1700,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/estoque.infra.csproj",
+      "projectUniqueName": "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj",
       "projectName": "estoque.infra",
-      "projectPath": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/estoque.infra.csproj",
+      "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj",
       "packagesPath": "/home/oem/.nuget/packages/",
-      "outputPath": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/obj/",
+      "outputPath": "/home/oem/github/icarus/icarus.estoque/estoque.infra/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/oem/.nuget/NuGet/NuGet.Config"
@@ -1719,8 +1719,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/oem/github/icarus-sistema/icarus.estoque/estoque.domain/estoque.domain.csproj": {
-              "projectPath": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.domain/estoque.domain.csproj"
+            "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj": {
+              "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj"
             }
           }
         }

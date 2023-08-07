@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BAkIAHZVOfNNF5BXC8wSAkKCC/hnnPDhHH8c8K0VRArjXEk2JLLNxXsRgG044xu9MhHGJGArFeb3Js6pV6LK5g==",
+  "dgSpecHash": "vGMDYfU0ZBwmSPEID7W9h7Gm+X5sUGv6NBTV5hoLSGRx0oPI8xE75gQKPpL6ey+Sx9OZ6A1oakqaAAlkROGVkg==",
   "success": true,
-  "projectFilePath": "/home/oem/github/icarus-sistema/icarus.estoque/estoque.infra/estoque.infra.csproj",
+  "projectFilePath": "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj",
   "expectedPackageFiles": [
     "/home/oem/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/oem/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
