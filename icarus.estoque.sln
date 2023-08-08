@@ -9,7 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "estoque.infra", "estoque.in
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "estoque.service", "estoque.service\estoque.service.csproj", "{9E3504AB-5D9B-45B6-85ED-50E82BF1FA7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "estoque.service.tests", "estoque.service.tests\estoque.service.tests.csproj", "{907A9DE9-E159-4882-83CC-10ECF5099951}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BB5F6705-18DB-4E03-92E1-29D74614B721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "estoque.service.benchmarks", "Tests\estoque.service.benchmarks\estoque.service.benchmarks.csproj", "{44BE0ACC-9D80-4B0C-85F0-3AE4BA2BA551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "estoque.service.tests", "Tests\estoque.service.tests\estoque.service.tests.csproj", "{193611A7-76F0-4143-8DA0-DC8494C06F1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,9 +36,17 @@ Global
 		{9E3504AB-5D9B-45B6-85ED-50E82BF1FA7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E3504AB-5D9B-45B6-85ED-50E82BF1FA7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E3504AB-5D9B-45B6-85ED-50E82BF1FA7F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{907A9DE9-E159-4882-83CC-10ECF5099951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{907A9DE9-E159-4882-83CC-10ECF5099951}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{907A9DE9-E159-4882-83CC-10ECF5099951}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{907A9DE9-E159-4882-83CC-10ECF5099951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BE0ACC-9D80-4B0C-85F0-3AE4BA2BA551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BE0ACC-9D80-4B0C-85F0-3AE4BA2BA551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BE0ACC-9D80-4B0C-85F0-3AE4BA2BA551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BE0ACC-9D80-4B0C-85F0-3AE4BA2BA551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193611A7-76F0-4143-8DA0-DC8494C06F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193611A7-76F0-4143-8DA0-DC8494C06F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193611A7-76F0-4143-8DA0-DC8494C06F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193611A7-76F0-4143-8DA0-DC8494C06F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44BE0ACC-9D80-4B0C-85F0-3AE4BA2BA551} = {BB5F6705-18DB-4E03-92E1-29D74614B721}
+		{193611A7-76F0-4143-8DA0-DC8494C06F1E} = {BB5F6705-18DB-4E03-92E1-29D74614B721}
 	EndGlobalSection
 EndGlobal
