@@ -11,9 +11,9 @@ namespace estoque.infra.Repository
         public RepoEstoque(IMessagePublisher publisher)
         {
             _publisher = publisher;
-            aoCriarProduto += _publisher.publicarProduto;
-            aoAtualizarProduto += _publisher.atualizarProduto;
-            aoDeletarProduto += _publisher.deletarProduto;
+            aoCriarProduto += _publisher.PublicarProduto;
+            aoAtualizarProduto += _publisher.AtualizarProduto;
+            aoDeletarProduto += _publisher.DeletarProduto;
         }
 
         public async Task<bool> adicionarProduto(Produto model)
