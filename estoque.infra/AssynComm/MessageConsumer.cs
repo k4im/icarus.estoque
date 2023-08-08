@@ -36,7 +36,7 @@ namespace estoque.infra.AssynComm
 
         void ConsumirProdutosDisponiveis(IModel channel)
         {
-            if (_channel.MessageCount("atualizar.estoque") != 0)
+            if (_channel.MessageCount(FilaEstoque) != 0)
             {
                 // Definindo um consumidor
                 var consumer = new EventingBasicConsumer(channel);
@@ -54,14 +54,14 @@ namespace estoque.infra.AssynComm
                         var projeto = JsonConvert.DeserializeObject<EnvelopeRecebido>(message);
 
                         // Estará realizando a operação de adicição dos projetos no banco de dados
-                        for (int i = 0; i <= channel.MessageCount("atualizar.estoque"); i++)
+                        for (int i = 0; i <= channel.MessageCount(FilaEstoque); i++)
                         {
                             await _repo.atualizarEstoque(projeto);
                         }
 
                         // seta o valor no EventSlim
                         // msgsRecievedGate.Set();
-                        Console.WriteLine("--> Dado consumido da fila[projeto.adicionado]");
+                        Console.WriteLine($"--> Dado consumido da fila [{FilaEstoque}]");
                         Console.WriteLine(message);
                         channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
 
@@ -76,7 +76,7 @@ namespace estoque.infra.AssynComm
 
                 };
                 // Consome o evento
-                channel.BasicConsume(queue: "atualizar.estoque",
+                channel.BasicConsume(queue: FilaEstoque,
                              autoAck: false,
                  consumer: consumer);
             }

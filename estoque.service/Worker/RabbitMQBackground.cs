@@ -18,7 +18,7 @@ namespace estoque.service.Worker
                     try
                     {
                         IMessageConsumer consumer = scope.ServiceProvider.GetService<IMessageConsumer>();
-                        consumer.verificarFila();
+                        consumer.VerificarFila();
                     }
                     catch (Exception e)
                     {

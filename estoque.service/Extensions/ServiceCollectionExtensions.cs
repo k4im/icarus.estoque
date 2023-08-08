@@ -66,11 +66,11 @@ namespace estoque.service.Extensions
 
         public static IServiceCollection AddDependencies(this IServiceCollection services)
         {
-            services.AddScoped<IRepoEstoque, RepoEstoque>();
-            services.AddScoped<IMessagePublisher, MessagePublisher>();
-            services.AddScoped<Logger>();
-            services.AddAutoMapper(typeof(Program).Assembly);
-            services.AddScoped<IMessageConsumer, MessageConsumer>();
+            services.AddTransient<IRepoEstoque, RepoEstoque>();
+            services.AddTransient<IMessagePublisher, MessagePublisher>();
+            services.AddTransient<Logger>();
+            services.AddTransient<IMessageConsumer, MessageConsumer>();
+            services.AddHttpContextAccessor();
             return services;
         }
 

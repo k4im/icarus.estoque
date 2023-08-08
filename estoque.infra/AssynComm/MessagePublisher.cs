@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Http;
+
 namespace estoque.infra.AssynComm
 {
     public class MessagePublisher : MessagePublisherExtension, IMessagePublisher
@@ -5,8 +7,8 @@ namespace estoque.infra.AssynComm
         readonly IConfiguration _config;
         readonly IConnection _connection;
         readonly IModel _channel;
-        readonly HttpContent _content;
-        public MessagePublisher(IConfiguration config, HttpContent content)
+        readonly IHttpContextAccessor _content;
+        public MessagePublisher(IConfiguration config, IHttpContextAccessor content)
         {
             _config = config;
             _content = content;
@@ -63,7 +65,7 @@ namespace estoque.infra.AssynComm
         }
         string SerializarObjeto(Produto model)
         {
-            var correlationID = _content.Headers.GetValues("X-CorrelationID").FirstOrDefault();
+            var correlationID = _content.HttpContext.Request.Headers["X-CorrelationID"].ToString();
             var produtoModel = new Envelope(model.Id, model.Nome, model.Quantidade, correlationID);
             return JsonConvert.SerializeObject(produtoModel);
         }
