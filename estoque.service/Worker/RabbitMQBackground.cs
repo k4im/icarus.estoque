@@ -1,32 +1,31 @@
-namespace estoque.service.Worker
-{
-    public class RabbitMQBackground : BackgroundService
-    {
-        IServiceProvider _provider;
-        public RabbitMQBackground(IServiceProvider provider)
-        {
-            _provider = provider;
-        }
+namespace estoque.service.Worker;
 
-        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+public class RabbitMQBackground : BackgroundService
+{
+    IServiceProvider _provider;
+    public RabbitMQBackground(IServiceProvider provider)
+    {
+        _provider = provider;
+    }
+
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        Console.WriteLine("Escutando fila...");
+        while (!stoppingToken.IsCancellationRequested)
         {
-            Console.WriteLine("Escutando fila...");
-            while (!stoppingToken.IsCancellationRequested)
+            using (var scope = _provider.CreateScope())
             {
-                using (var scope = _provider.CreateScope())
+                try
                 {
-                    try
-                    {
-                        IMessageConsumer consumer = scope.ServiceProvider.GetService<IMessageConsumer>();
-                        consumer.VerificarFila();
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine($"Não foi possivel conectar ao BUS: {e.Message}");
-                    }
+                    IMessageConsumer consumer = scope.ServiceProvider.GetService<IMessageConsumer>();
+                    consumer.VerificarFila();
                 }
-                await Task.Delay(8000, stoppingToken);
+                catch (Exception e)
+                {
+                    Console.WriteLine($"Não foi possivel conectar ao BUS: {e.Message}");
+                }
             }
+            await Task.Delay(8000, stoppingToken);
         }
     }
 }

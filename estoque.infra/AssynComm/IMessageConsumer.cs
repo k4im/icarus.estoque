@@ -1,8 +1,5 @@
-namespace estoque.infra.AssynComm
+namespace estoque.infra.AssynComm;
+public interface IMessageConsumer
 {
-
-    public interface IMessageConsumer
-    {
-        void VerificarFila();
-    }
+    void VerificarFila();
 }

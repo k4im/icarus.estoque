@@ -1,9 +1,8 @@
-namespace estoque.domain.Entity
+namespace estoque.domain.Entity;
+
+public class EnvelopeRecebido
 {
-    public class EnvelopeRecebido
-    {
-        public int ProdutoUtilizado { get; set; }
-        public int QuantidadeUtilizado { get; set; }
-        public string CorrelationID { get; set; }
-    }
+    public int ProdutoUtilizado { get; set; }
+    public int QuantidadeUtilizado { get; set; }
+    public string CorrelationID { get; set; }
 }

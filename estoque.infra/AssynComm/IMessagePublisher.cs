@@ -1,9 +1,8 @@
-namespace estoque.infra.AssynComm
+namespace estoque.infra.AssynComm;
+
+public interface IMessagePublisher
 {
-    public interface IMessagePublisher
-    {
-        void PublicarProduto(Produto produto);
-        void AtualizarProduto(Produto produto);
-        void DeletarProduto(Produto produto);
-    }
+    void PublicarProduto(Produto produto);
+    void AtualizarProduto(Produto produto);
+    void DeletarProduto(Produto produto);
 }

@@ -1,15 +1,14 @@
-namespace estoque.infra.Repository
+namespace estoque.infra.Repository;
+
+public interface IRepoEstoque
 {
-    public interface IRepoEstoque
-    {
-        Task<Produto> buscarProdutoId(int? id);
-        Task<Response<Produto>> buscarProdutos(int pagina, float resultado);
+    Task<Produto> buscarProdutoId(int? id);
+    Task<Response<Produto>> buscarProdutos(int pagina, float resultado);
 
-        Task<bool> adicionarProduto(Produto model);
+    Task<bool> adicionarProduto(Produto model);
 
-        Task<bool> removerProduto(int? id);
+    Task<bool> removerProduto(int? id);
 
-        Task<bool> atualizarProduto(int? id, Produto model);
-        Task atualizarEstoque(EnvelopeRecebido model);
-    }
+    Task<bool> atualizarProduto(int? id, Produto model);
+    Task atualizarEstoque(EnvelopeRecebido model);
 }

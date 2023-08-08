@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "CaSA6zAg28OFLUbeT5dHzzMA1S2OUcjCKrxpLTyrqK86IudaU7YH1MZQBunl2jpxNoOwYC1bhwnsJABJ4ipr3g==",
-  "success": true,
+  "dgSpecHash": "jbzcGzVu5Py4SFzXFb5Y8nhyXrQ5vsy/OEZXl1UU01VY9yZGw2kvdwcLqjWQbP+xrzpNx5WXiXu+GSczu9PF8A==",
+  "success": false,
   "projectFilePath": "/home/oem/github/icarus/icarus.estoque/estoque.service.tests/estoque.service.tests.csproj",
   "expectedPackageFiles": [
     "/home/oem/.nuget/packages/autofac/6.0.0/autofac.6.0.0.nupkg.sha512",
@@ -11,7 +11,7 @@
     "/home/oem/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/home/oem/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/home/oem/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
-    "/home/oem/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
+    "/home/oem/.nuget/packages/dapper/2.0.143/dapper.2.0.143.nupkg.sha512",
     "/home/oem/.nuget/packages/dapper.contrib/2.0.78/dapper.contrib.2.0.78.nupkg.sha512",
     "/home/oem/.nuget/packages/fare/2.1.1/fare.2.1.1.nupkg.sha512",
     "/home/oem/.nuget/packages/fluentassertions/6.11.0/fluentassertions.6.11.0.nupkg.sha512",
@@ -19,11 +19,14 @@
     "/home/oem/.nuget/packages/microsoft.aspnetcore.openapi/7.0.3/microsoft.aspnetcore.openapi.7.0.3.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.codecoverage/17.3.2/microsoft.codecoverage.17.3.2.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.entityframeworkcore/7.0.9/microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.inmemory/7.0.9/microsoft.entityframeworkcore.inmemory.7.0.9.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.data.sqlite.core/7.0.10/microsoft.data.sqlite.core.7.0.10.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore/7.0.10/microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.10/microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.10/microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.inmemory/7.0.10/microsoft.entityframeworkcore.inmemory.7.0.10.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.5/microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.sqlite/7.0.10/microsoft.entityframeworkcore.sqlite.7.0.10.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/7.0.10/microsoft.entityframeworkcore.sqlite.core.7.0.10.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
@@ -88,6 +91,10 @@
     "/home/oem/.nuget/packages/serilog.sinks.debug/2.0.0/serilog.sinks.debug.2.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/serilog.sinks.file/5.0.0/serilog.sinks.file.5.0.0.nupkg.sha512",
     "/home/oem/.nuget/packages/serilog.sinks.graylog/3.0.1/serilog.sinks.graylog.3.0.1.nupkg.sha512",
+    "/home/oem/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.4/sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
+    "/home/oem/.nuget/packages/sqlitepclraw.core/2.1.4/sqlitepclraw.core.2.1.4.nupkg.sha512",
+    "/home/oem/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.4/sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
+    "/home/oem/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.4/sqlitepclraw.provider.e_sqlite3.2.1.4.nupkg.sha512",
     "/home/oem/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/home/oem/.nuget/packages/swashbuckle.aspnetcore.filters/7.0.6/swashbuckle.aspnetcore.filters.7.0.6.nupkg.sha512",
     "/home/oem/.nuget/packages/swashbuckle.aspnetcore.filters.abstractions/7.0.6/swashbuckle.aspnetcore.filters.abstractions.7.0.6.nupkg.sha512",
@@ -174,5 +181,15 @@
     "/home/oem/.nuget/packages/xunit.extensibility.execution/2.4.2/xunit.extensibility.execution.2.4.2.nupkg.sha512",
     "/home/oem/.nuget/packages/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.Relational from 7.0.10 to 7.0.5. Reference the package directly from the project to select a different version. \n estoque.service.tests -> estoque.service -> estoque.infra -> Microsoft.EntityFrameworkCore.Sqlite 7.0.10 -> Microsoft.EntityFrameworkCore.Sqlite.Core 7.0.10 -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.10) \n estoque.service.tests -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

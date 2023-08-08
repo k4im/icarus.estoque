@@ -14,3 +14,6 @@ global using AutoMapper;
 global using Microsoft.EntityFrameworkCore;
 global using Serilog;
 global using Serilog.Sinks.Graylog;
+global using Microsoft.Data.Sqlite;
+global using Dapper;
+global using Microsoft.AspNetCore.Http;
