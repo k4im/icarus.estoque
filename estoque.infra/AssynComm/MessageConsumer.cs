@@ -31,10 +31,10 @@ namespace estoque.infra.AssynComm
             }
         }
 
-        public void verificarFila()
-            => consumirProdutosDisponiveis(_channel);
+        public void VerificarFila()
+            => ConsumirProdutosDisponiveis(_channel);
 
-        void consumirProdutosDisponiveis(IModel channel)
+        void ConsumirProdutosDisponiveis(IModel channel)
         {
             if (_channel.MessageCount("atualizar.estoque") != 0)
             {

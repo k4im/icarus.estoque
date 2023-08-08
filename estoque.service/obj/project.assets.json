@@ -3623,35 +3623,38 @@
     ]
   },
   "packageFolders": {
-    "/home/oem/.nuget/packages/": {}
+    "C:\\Users\\santo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oem/github/icarus/icarus.estoque/estoque.service/estoque.service.csproj",
+      "projectUniqueName": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.estoque\\estoque.service\\estoque.service.csproj",
       "projectName": "estoque.service",
-      "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.service/estoque.service.csproj",
-      "packagesPath": "/home/oem/.nuget/packages/",
-      "outputPath": "/home/oem/github/icarus/icarus.estoque/estoque.service/obj/",
+      "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.estoque\\estoque.service\\estoque.service.csproj",
+      "packagesPath": "C:\\Users\\santo\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.estoque\\estoque.service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/oem/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\santo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj": {
-              "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj"
+            "c:\\Users\\santo\\github\\icarus-sistema\\icarus.estoque\\estoque.domain\\estoque.domain.csproj": {
+              "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.estoque\\estoque.domain\\estoque.domain.csproj"
             },
-            "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj": {
-              "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj"
+            "c:\\Users\\santo\\github\\icarus-sistema\\icarus.estoque\\estoque.infra\\estoque.infra.csproj": {
+              "projectPath": "c:\\Users\\santo\\github\\icarus-sistema\\icarus.estoque\\estoque.infra\\estoque.infra.csproj"
             }
           }
         }
@@ -3762,7 +3765,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

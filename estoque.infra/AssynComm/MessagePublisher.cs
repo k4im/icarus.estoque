@@ -34,12 +34,12 @@ namespace estoque.infra.AssynComm
             }
 
         }
-        public void publicarProduto(Produto produto)
+        public void PublicarProduto(Produto produto)
             => EnviarEvento(SerializarObjeto(produto), routingKeyAdicionado);
 
-        public void atualizarProduto(Produto produto)
+        public void AtualizarProduto(Produto produto)
             => EnviarEvento(SerializarObjeto(produto), routingKeyAtualizado);
-        public void deletarProduto(Produto produto)
+        public void DeletarProduto(Produto produto)
             => EnviarEvento(SerializarObjeto(produto), routingKeyDeletado);
 
         void EnviarEvento(string evento, string routingKey)
