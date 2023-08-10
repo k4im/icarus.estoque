@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "zp/iyKKmyae1Z49ig1lmUpVJ/qrchBITclDwwNSmlsTcKavctmjwchXJw9I1fD3JpHS1U8b55v881B2ffqjzcg==",
-  "success": false,
+  "dgSpecHash": "iRjkRFseOuNDPlHER1ku024IFv7kRA1KsuD3y8gmTqGH8yEB3HPeziXIwK1NfT74xGWV63cT80hAyE1XGqMVLA==",
+  "success": true,
   "projectFilePath": "/home/oem/github/icarus/icarus.estoque/Tests/estoque.service.tests/estoque.service.tests.csproj",
   "expectedPackageFiles": [
     "/home/oem/.nuget/packages/autofac/6.0.0/autofac.6.0.0.nupkg.sha512",
@@ -24,7 +24,7 @@
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.10/microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.10/microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore.inmemory/7.0.10/microsoft.entityframeworkcore.inmemory.7.0.10.nupkg.sha512",
-    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.5/microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
+    "/home/oem/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.10/microsoft.entityframeworkcore.relational.7.0.10.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore.sqlite/7.0.10/microsoft.entityframeworkcore.sqlite.7.0.10.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/7.0.10/microsoft.entityframeworkcore.sqlite.core.7.0.10.nupkg.sha512",
     "/home/oem/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
@@ -181,15 +181,5 @@
     "/home/oem/.nuget/packages/xunit.extensibility.execution/2.4.2/xunit.extensibility.execution.2.4.2.nupkg.sha512",
     "/home/oem/.nuget/packages/xunit.runner.visualstudio/2.4.5/xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore.Relational from 7.0.10 to 7.0.5. Reference the package directly from the project to select a different version. \n estoque.service.tests -> estoque.infra -> Microsoft.EntityFrameworkCore.Sqlite 7.0.10 -> Microsoft.EntityFrameworkCore.Sqlite.Core 7.0.10 -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.10) \n estoque.service.tests -> Microsoft.EntityFrameworkCore.Relational (>= 7.0.5)",
-      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }
