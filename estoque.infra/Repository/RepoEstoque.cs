@@ -1,3 +1,5 @@
+using MySqlConnector;
+
 namespace estoque.infra.Repository;
 
 public class RepoEstoque : IRepoEstoque
@@ -7,7 +9,7 @@ public class RepoEstoque : IRepoEstoque
     event produtoEventHandler AoCriarProduto;
     event produtoEventHandler AoDeletarProduto;
     event produtoEventHandler AoAtualizarProduto;
-    public string connStr = "Data Source=estoque.db;";
+    public string connStr = Environment.GetEnvironmentVariable("DB_CONNECTION");
     public RepoEstoque(IMessagePublisher publisher)
     {
         _publisher = publisher;
@@ -76,7 +78,7 @@ public class RepoEstoque : IRepoEstoque
         try
         {
             var query = "SELECT * FROM Produtos WHERE Id LIKE @busca";
-            using var conn = new SqliteConnection(connStr);
+            using var conn = new MySqlConnection(connStr);
             var produto = await conn.QueryFirstOrDefaultAsync<Produto>(query, new { busca = id });
             if (produto == null) return null;
             return produto;
@@ -94,7 +96,7 @@ public class RepoEstoque : IRepoEstoque
         try
         {
 
-            using var conn = new SqliteConnection("Data Source=estoque.db;");
+            using var conn = new MySqlConnection(connStr);
             var total = conn.ExecuteScalar<int>(queryCount);
             var paginasTotal = Math.Ceiling(total / resultado);
             var produtos = await conn.QueryAsync<Produto>(query, new { paginas = pagina, resultados = resultado });

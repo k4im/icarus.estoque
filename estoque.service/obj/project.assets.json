@@ -1512,6 +1512,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.10",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Newtonsoft.Json": "13.0.3",
+          "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
           "RabbitMQ.Client": "6.5.0",
           "Serilog": "3.0.1",
           "Serilog.AspNetCore": "7.0.0",
@@ -3933,7 +3934,6 @@
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "Moq.EntityFrameworkCore >= 7.0.0.2",
       "Newtonsoft.Json >= 13.0.3",
-      "Pomelo.EntityFrameworkCore.MySql >= 7.0.0",
       "RabbitMQ.Client >= 6.5.0",
       "Serilog >= 3.0.1",
       "Serilog.AspNetCore >= 7.0.0",
@@ -4018,10 +4018,6 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
-          },
-          "Pomelo.EntityFrameworkCore.MySql": {
-            "target": "Package",
-            "version": "[7.0.0, )"
           },
           "RabbitMQ.Client": {
             "target": "Package",

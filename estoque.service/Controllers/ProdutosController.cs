@@ -1,7 +1,7 @@
 namespace estoque.service.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/")]
 public class ProdutosController : ControllerBase
 {
     readonly IRepoEstoque _repo;
