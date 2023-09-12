@@ -14,8 +14,8 @@ public class MessagePublisher : MessagePublisherExtension, IMessagePublisher
         var factory = new ConnectionFactory()
         {
             HostName = _config["RabbitMQ"],
-            UserName = _config["RabbitMQUser"],
-            Password = _config["RabbitMQPwd"],
+            UserName = Environment.GetEnvironmentVariable("Rabbit_MQ_USER"),
+            Password = Environment.GetEnvironmentVariable("Rabbit_MQ_PWD"),
             Port = Convert.ToInt32(_config["RabbitPort"])
         };
 
