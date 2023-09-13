@@ -140,7 +140,7 @@ public class RepoEstoque : IRepoEstoque
         try
         {
             using var db = new DataContext();
-            var produto = await db.Produtos.AsNoTracking()
+            var produto = await db.Produtos
                 .FirstOrDefaultAsync(x => x.Id == model.ProdutoUtilizado);
             if (produto == null) Console.WriteLine("Produto nulo");
             produto.diminuirQuantidade(model.QuantidadeUtilizado);
