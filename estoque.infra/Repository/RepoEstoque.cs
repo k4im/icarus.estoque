@@ -100,7 +100,7 @@ public class RepoEstoque : IRepoEstoque
             var total = conn.ExecuteScalar<int>(queryCount);
             var paginasTotal = Math.Ceiling(total / resultado);
             var produtos = await conn.QueryAsync<ProdutoDTO>(query, new { paginas = pagina, resultados = resultado });
-            return new Response<ProdutoDTO>(produtos.ToList(), pagina, (int)paginasTotal);
+            return new Response<ProdutoDTO>(produtos.ToList(), pagina, (int)paginasTotal, total);
         }
         catch (Exception e)
         {
