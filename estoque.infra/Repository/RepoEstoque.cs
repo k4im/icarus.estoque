@@ -99,7 +99,7 @@ public class RepoEstoque : IRepoEstoque
             using var conn = new MySqlConnection(connStr);
             var total = conn.ExecuteScalar<int>(queryCount);
             var paginasTotal = Math.Ceiling(total / resultado);
-            var produtos = await conn.QueryAsync<ProdutoDTO>(query, new { paginas = pagina, resultados = resultado });
+            var produtos = await conn.QueryAsync<ProdutoDTO>(query, new { resultados = resultado, paginas = (pagina - 1) * resultado });
             return new Response<ProdutoDTO>(produtos.ToList(), pagina, (int)paginasTotal, total);
         }
         catch (Exception e)
