@@ -143,7 +143,7 @@ public class RepoEstoque : IRepoEstoque
             var produto = await db.Produtos
                 .FirstOrDefaultAsync(x => x.Id == model.ProdutoUtilizado);
             if (produto == null) Console.WriteLine("Produto nulo");
-            produto.diminuirQuantidade(model.QuantidadeUtilizado);
+            produto.Quantidade -= model.QuantidadeUtilizado;
             await db.SaveChangesAsync();
         }
         catch (DbUpdateConcurrencyException)

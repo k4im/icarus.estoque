@@ -16,7 +16,7 @@ public class Produto
     public double Valor { get; private set; }
 
     [Required]
-    public int Quantidade { get; private set; }
+    public int Quantidade { get; set; }
 
 
     double verificarValorProduto(double valor)
