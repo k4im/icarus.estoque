@@ -73,13 +73,13 @@ public class RepoEstoque : IRepoEstoque
         }
     }
 
-    public async Task<Produto> buscarProdutoId(int? id)
+    public async Task<ProdutoDTO> buscarProdutoId(int? id)
     {
         try
         {
             var query = "SELECT * FROM Produtos WHERE Id LIKE @busca";
             using var conn = new MySqlConnection(connStr);
-            var produto = await conn.QueryFirstOrDefaultAsync<Produto>(query, new { busca = id });
+            var produto = await conn.QueryFirstOrDefaultAsync<ProdutoDTO>(query, new { busca = id });
             if (produto == null) return null;
             return produto;
         }
@@ -89,7 +89,7 @@ public class RepoEstoque : IRepoEstoque
         }
     }
 
-    public async Task<Response<Produto>> buscarProdutos(int pagina, float resultado)
+    public async Task<Response<ProdutoDTO>> buscarProdutos(int pagina, float resultado)
     {
         var query = "SELECT * FROM Produtos LIMIT @resultados OFFSET @paginas";
         var queryCount = "SELECT COUNT(*) FROM Produtos";
@@ -99,11 +99,12 @@ public class RepoEstoque : IRepoEstoque
             using var conn = new MySqlConnection(connStr);
             var total = conn.ExecuteScalar<int>(queryCount);
             var paginasTotal = Math.Ceiling(total / resultado);
-            var produtos = await conn.QueryAsync<Produto>(query, new { paginas = pagina, resultados = resultado });
-            return new Response<Produto>(produtos.ToList(), pagina, (int)paginasTotal);
+            var produtos = await conn.QueryAsync<ProdutoDTO>(query, new { paginas = pagina, resultados = resultado });
+            return new Response<ProdutoDTO>(produtos.ToList(), pagina, (int)paginasTotal);
         }
-        catch (Exception)
+        catch (Exception e)
         {
+            Console.WriteLine("Ocorreu um erro ao realizar a operação: " + e.Message);
             return null;
         }
     }

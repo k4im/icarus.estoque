@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/oem/github/icarus/icarus.estoque/Tests/estoque.service.tests/estoque.service.tests.csproj": {}
+    "/home/joao/github/icarus.estoque/Tests/estoque.service.tests/estoque.service.tests.csproj": {}
   },
   "projects": {
-    "/home/oem/github/icarus/icarus.estoque/Tests/estoque.service.tests/estoque.service.tests.csproj": {
+    "/home/joao/github/icarus.estoque/Tests/estoque.service.tests/estoque.service.tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oem/github/icarus/icarus.estoque/Tests/estoque.service.tests/estoque.service.tests.csproj",
+        "projectUniqueName": "/home/joao/github/icarus.estoque/Tests/estoque.service.tests/estoque.service.tests.csproj",
         "projectName": "estoque.service.tests",
-        "projectPath": "/home/oem/github/icarus/icarus.estoque/Tests/estoque.service.tests/estoque.service.tests.csproj",
-        "packagesPath": "/home/oem/.nuget/packages/",
-        "outputPath": "/home/oem/github/icarus/icarus.estoque/Tests/estoque.service.tests/obj/",
+        "projectPath": "/home/joao/github/icarus.estoque/Tests/estoque.service.tests/estoque.service.tests.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/github/icarus.estoque/Tests/estoque.service.tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/oem/.nuget/NuGet/NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,14 +26,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj": {
-                "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj"
+              "/home/joao/github/icarus.estoque/estoque.domain/estoque.domain.csproj": {
+                "projectPath": "/home/joao/github/icarus.estoque/estoque.domain/estoque.domain.csproj"
               },
-              "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj": {
-                "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj"
+              "/home/joao/github/icarus.estoque/estoque.infra/estoque.infra.csproj": {
+                "projectPath": "/home/joao/github/icarus.estoque/estoque.infra/estoque.infra.csproj"
               },
-              "/home/oem/github/icarus/icarus.estoque/estoque.service/estoque.service.csproj": {
-                "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.service/estoque.service.csproj"
+              "/home/joao/github/icarus.estoque/estoque.service/estoque.service.csproj": {
+                "projectPath": "/home/joao/github/icarus.estoque/estoque.service/estoque.service.csproj"
               }
             }
           }
@@ -117,21 +117,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj": {
+    "/home/joao/github/icarus.estoque/estoque.domain/estoque.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj",
+        "projectUniqueName": "/home/joao/github/icarus.estoque/estoque.domain/estoque.domain.csproj",
         "projectName": "estoque.domain",
-        "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj",
-        "packagesPath": "/home/oem/.nuget/packages/",
-        "outputPath": "/home/oem/github/icarus/icarus.estoque/estoque.domain/obj/",
+        "projectPath": "/home/joao/github/icarus.estoque/estoque.domain/estoque.domain.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/github/icarus.estoque/estoque.domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/oem/.nuget/NuGet/NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -180,21 +180,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj": {
+    "/home/joao/github/icarus.estoque/estoque.infra/estoque.infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj",
+        "projectUniqueName": "/home/joao/github/icarus.estoque/estoque.infra/estoque.infra.csproj",
         "projectName": "estoque.infra",
-        "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj",
-        "packagesPath": "/home/oem/.nuget/packages/",
-        "outputPath": "/home/oem/github/icarus/icarus.estoque/estoque.infra/obj/",
+        "projectPath": "/home/joao/github/icarus.estoque/estoque.infra/estoque.infra.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/github/icarus.estoque/estoque.infra/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/oem/.nuget/NuGet/NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -206,8 +206,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj": {
-                "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj"
+              "/home/joao/github/icarus.estoque/estoque.domain/estoque.domain.csproj": {
+                "projectPath": "/home/joao/github/icarus.estoque/estoque.domain/estoque.domain.csproj"
               }
             }
           }
@@ -268,6 +268,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -305,21 +309,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/oem/github/icarus/icarus.estoque/estoque.service/estoque.service.csproj": {
+    "/home/joao/github/icarus.estoque/estoque.service/estoque.service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/oem/github/icarus/icarus.estoque/estoque.service/estoque.service.csproj",
+        "projectUniqueName": "/home/joao/github/icarus.estoque/estoque.service/estoque.service.csproj",
         "projectName": "estoque.service",
-        "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.service/estoque.service.csproj",
-        "packagesPath": "/home/oem/.nuget/packages/",
-        "outputPath": "/home/oem/github/icarus/icarus.estoque/estoque.service/obj/",
+        "projectPath": "/home/joao/github/icarus.estoque/estoque.service/estoque.service.csproj",
+        "packagesPath": "/home/joao/.nuget/packages/",
+        "outputPath": "/home/joao/github/icarus.estoque/estoque.service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/oem/.nuget/NuGet/NuGet.Config"
+          "/home/joao/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -331,11 +335,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj": {
-                "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.domain/estoque.domain.csproj"
+              "/home/joao/github/icarus.estoque/estoque.domain/estoque.domain.csproj": {
+                "projectPath": "/home/joao/github/icarus.estoque/estoque.domain/estoque.domain.csproj"
               },
-              "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj": {
-                "projectPath": "/home/oem/github/icarus/icarus.estoque/estoque.infra/estoque.infra.csproj"
+              "/home/joao/github/icarus.estoque/estoque.infra/estoque.infra.csproj": {
+                "projectPath": "/home/joao/github/icarus.estoque/estoque.infra/estoque.infra.csproj"
               }
             }
           }
@@ -377,10 +381,6 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             },
             "RabbitMQ.Client": {
               "target": "Package",
@@ -438,7 +438,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     }
