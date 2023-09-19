@@ -28,7 +28,7 @@ public class ProdutosController : ControllerBase
         // var teste = HttpContext.Request.Headers["X-Correlation-ID"].ToString();
         // Console.WriteLine($"TESTADA: [{teste}]");
         var produtos = await _repo.buscarProdutos(pagina, resultado);
-        if (produtos == null)
+        if (produtos.Data == null)
         {
             _logger.logarAviso($"Não foi possivel buscar uma lista de produtos. Requirido por: [{currentUser}]");
             return StatusCode(404, "Não foi possivel identificar nenhum produto!");
