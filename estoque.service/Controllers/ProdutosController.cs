@@ -24,18 +24,28 @@ public class ProdutosController : ControllerBase
     [Authorize(Roles = "ADMIN,ATENDENTE")]
     public async Task<IActionResult> buscarProdutos(int pagina = 1, int resultado = 5)
     {
-        var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);
-
-        // Recupera ID de correlacao
-        // var teste = HttpContext.Request.Headers["X-Correlation-ID"].ToString();
-        // Console.WriteLine($"TESTADA: [{teste}]");
         var produtos = await _repo.buscarProdutos(pagina, resultado);
         if (!produtos.Data.Any())
         {
-            _logger.logarAviso($"Não foi possivel buscar uma lista de produtos. Requirido por: [{currentUser}]");
             return StatusCode(404, "Não foi possivel identificar nenhum produto!");
         }
-        _logger.logarInfo($"Retornado lista de produtos para: [{currentUser}]");
+        return StatusCode(200, produtos);
+    }
+
+    /// <summary>
+    /// Este metodo estarpa realizando retornando uma lista contendo as pagina atual, total por pagina e uma lista contendo os produtos.
+    /// </summary>
+    /// <response code="200">Retorna a lista com os dados necessários</response>
+    /// <response code="404">Informa que não foi possivel localizar a lista de produtos</response>
+    [HttpGet("pesquisar/produtos/nome/{pagina?}/{resultado?}")]
+    [Authorize(Roles = "ADMIN,ATENDENTE")]
+    public async Task<IActionResult> FiltrarProdutosPorNome([FromQuery]string filter, int pagina = 1, int resultado = 5)
+    {
+        var produtos = await _repo.BuscarProdutosPorNome(filter, pagina, resultado);
+        if (!produtos.Data.Any())
+        {
+            return StatusCode(404, "Não foi possivel identificar nenhum produto!");
+        }
         return StatusCode(200, produtos);
     }
 

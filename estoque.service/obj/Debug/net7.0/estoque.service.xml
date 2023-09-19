@@ -11,6 +11,13 @@
             <response code="200">Retorna a lista com os dados necessários</response>
             <response code="404">Informa que não foi possivel localizar a lista de produtos</response>
         </member>
+        <member name="M:estoque.service.Controllers.ProdutosController.FiltrarProdutosPorNome(System.String,System.Int32,System.Int32)">
+            <summary>
+            Este metodo estarpa realizando retornando uma lista contendo as pagina atual, total por pagina e uma lista contendo os produtos.
+            </summary>
+            <response code="200">Retorna a lista com os dados necessários</response>
+            <response code="404">Informa que não foi possivel localizar a lista de produtos</response>
+        </member>
         <member name="M:estoque.service.Controllers.ProdutosController.buscarProdutoId(System.Nullable{System.Int32})">
             <summary>
              Estará realizando o a pesquisa de um produto a partir de um ID   
