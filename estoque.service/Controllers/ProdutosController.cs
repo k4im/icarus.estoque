@@ -37,7 +37,7 @@ public class ProdutosController : ControllerBase
     /// </summary>
     /// <response code="200">Retorna a lista com os dados necessários</response>
     /// <response code="404">Informa que não foi possivel localizar a lista de produtos</response>
-    [HttpGet("pesquisar/produtos/nome/{pagina?}/{resultado?}")]
+    [HttpGet("pesquisar/nome/{pagina?}/{resultado?}")]
     [Authorize(Roles = "ADMIN,ATENDENTE")]
     public async Task<IActionResult> FiltrarProdutosPorNome([FromQuery]string filter, int pagina = 1, int resultado = 5)
     {

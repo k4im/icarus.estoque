@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vq46PBePw8moKU1sXstly2RghutR5k1IbIbt+hp0nSnQ1urB8kXbvoG7jvwVi5EqOXAmI7OXZ2XOoe2IUdYrjg==",
+  "dgSpecHash": "GCLW1V3YtOpoNHof1YYKf6zoT2fbodLbKzphIpsdz2peaS5SDCnRnwcfIrC95d2y1HX4RZcRFSTEQeD9+ugYAQ==",
   "success": true,
   "projectFilePath": "/home/joao/github/icarus.estoque/Tests/estoque.service.benchmarks/estoque.service.benchmarks.csproj",
   "expectedPackageFiles": [
