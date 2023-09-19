@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authorization;
+
 namespace estoque.service.Controllers;
 
 [ApiController]
@@ -19,7 +21,7 @@ public class ProdutosController : ControllerBase
     /// <response code="200">Retorna a lista com os dados necessários</response>
     /// <response code="404">Informa que não foi possivel localizar a lista de produtos</response>
     [HttpGet("{pagina?}/{resultado?}")]
-    // [Authorize(Roles = "ADMIN,ATENDENTE")]
+    [Authorize(Roles = "ADMIN,ATENDENTE")]
     public async Task<IActionResult> buscarProdutos(int pagina = 1, int resultado = 5)
     {
         var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);
@@ -28,7 +30,7 @@ public class ProdutosController : ControllerBase
         // var teste = HttpContext.Request.Headers["X-Correlation-ID"].ToString();
         // Console.WriteLine($"TESTADA: [{teste}]");
         var produtos = await _repo.buscarProdutos(pagina, resultado);
-        if (produtos.Data == null)
+        if (!produtos.Data.Any())
         {
             _logger.logarAviso($"Não foi possivel buscar uma lista de produtos. Requirido por: [{currentUser}]");
             return StatusCode(404, "Não foi possivel identificar nenhum produto!");
@@ -44,7 +46,7 @@ public class ProdutosController : ControllerBase
     /// <response code="404">Informa que não foi possivel estar encontrando o produto.</response>
     /// <response code="400">Retorna BadRequest e informa que é necessário ter um id para pequisa</response>
     [HttpGet("{id}")]
-    // [Authorize(Roles = "ADMIN,ATENDENTE")]
+    [Authorize(Roles = "ADMIN,ATENDENTE")]
     public async Task<IActionResult> buscarProdutoId(int? id)
     {
         var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);
@@ -81,7 +83,7 @@ public class ProdutosController : ControllerBase
     /// <response code="400">BadRequest, informa o campo que está errado no modelo</response>
     /// <response code="500">Informa que algo deu errado do lado do servidor</response>
     [HttpPost("novo_produto")]
-    //[Authorize(Roles = "ADMIN")]
+    [Authorize(Roles = "ADMIN")]
     public async Task<IActionResult> adicionarProduto(Produto model)
     {
         var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);
@@ -116,7 +118,7 @@ public class ProdutosController : ControllerBase
     /// <response code="400">BadRequest, informa o campo que está errado no modelo</response>
     /// <response code="500">Informa que algo deu errado do lado do servidor</response>
     [HttpPut("produto_atualizar/{id?}")]
-    // [Authorize(Roles = "ADMIN")]
+    [Authorize(Roles = "ADMIN")]
     public async Task<IActionResult> atualizarProduto(int? id, Produto model)
     {
         var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);
@@ -151,7 +153,7 @@ public class ProdutosController : ControllerBase
     /// <response code="200">Informa que o produto foi deletado com sucesso</response>
     /// <response code="500">Informa que não foi possivel realizar a operação, erro do lado do servidor</response>
     [HttpDelete("produto_delete/{id?}")]
-    // [Authorize(Roles = "ADMIN")]
+    [Authorize(Roles = "ADMIN")]
     public async Task<IActionResult> deletarProduto(int? id)
     {
         var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);
