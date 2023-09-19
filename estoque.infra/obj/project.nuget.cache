@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+Ga7RKTqdx9kOkLsufq/gsDOyN2a/YQXuJo5ni5GfkkxO7AQy5nQ8prkvZDYkjv2M2nbe+tM9NDzGCf3miwBfA==",
+  "dgSpecHash": "dAyFD5VWxzZWFnx5aeKJp7XV+p2Y5hWgnD2VW6BXhgnrrN48oqPXNIeyWGYAB8hOPhIdVu2JX1hRmBslPn3dbA==",
   "success": true,
   "projectFilePath": "/home/joao/github/icarus.estoque/estoque.infra/estoque.infra.csproj",
   "expectedPackageFiles": [

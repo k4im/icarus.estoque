@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9V77kpj7SqjA26TrBM8Rr0VWy1BXLldR23qXJICDiCVm4BN+zNhBy1nBSdyCaE8hSIkChlM6HQcsIwWhvl/t+w==",
+  "dgSpecHash": "5084vJ7hXnzQr3YZ1HIn5kGeyhwv0iNdgxtvAFr4ZrBjHZ51IFxLo8UA5hPcSbn8WHNw9EYYVabvIgZq2NzG8A==",
   "success": true,
   "projectFilePath": "/home/joao/github/icarus.estoque/estoque.domain/estoque.domain.csproj",
   "expectedPackageFiles": [
