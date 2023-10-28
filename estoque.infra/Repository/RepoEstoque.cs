@@ -158,14 +158,25 @@ public class RepoEstoque : IRepoEstoque
 
     public async Task<Response<ProdutoDTO>> BuscarProdutosPorNome(string filtro, int pagina, float resultado)
     {
-        var query = "SELECT Id, Nome, Valor, Quantidade FROM Produtos WHERE Nome LIKE @filter";
+        var query = @"SELECT 
+            *
+        FROM 
+            Produtos 
+        WHERE
+            Produtos.Nome
+        LIKE
+            @filter         
+        LIMIT 
+            @resultado 
+        OFFSET 
+            @pagina";
         var queryCount = "SELECT COUNT(*) FROM Produtos";
         try
         {
             using var conn = new MySqlConnection(connStr);
             var total = conn.ExecuteScalar<int>(queryCount);
             var paginasTotal = Math.Ceiling(total / resultado);
-            var result = await conn.QueryAsync<ProdutoDTO>(query, new {filter = filtro});
+            var result = await conn.QueryAsync<ProdutoDTO>(query, new {filter = $"%{filtro}%", pagina = (pagina - 1) * resultado, resultado = resultado});
             return new Response<ProdutoDTO>(result.ToList(), pagina, (int)paginasTotal, total);
         }
         catch (Exception e)

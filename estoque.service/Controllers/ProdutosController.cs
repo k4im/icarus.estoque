@@ -39,9 +39,9 @@ public class ProdutosController : ControllerBase
     /// <response code="404">Informa que não foi possivel localizar a lista de produtos</response>
     [HttpGet("pesquisar/nome/{pagina?}/{resultado?}")]
     [Authorize(Roles = "ADMIN,ATENDENTE")]
-    public async Task<IActionResult> FiltrarProdutosPorNome([FromQuery]string filter, int pagina = 1, int resultado = 5)
+    public async Task<IActionResult> FiltrarProdutosPorNome([FromQuery]string filtro, int pagina = 1, int resultado = 5)
     {
-        var produtos = await _repo.BuscarProdutosPorNome(filter, pagina, resultado);
+        var produtos = await _repo.BuscarProdutosPorNome(filtro, pagina, resultado);
         if (!produtos.Data.Any())
         {
             return StatusCode(404, "Não foi possivel identificar nenhum produto!");
