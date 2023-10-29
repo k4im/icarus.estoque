@@ -43,8 +43,8 @@ public class Produto
     }
     public void atualizarProduto(Produto model)
     {
-        this.Nome = model.Nome;
-        this.Valor = model.Valor;
-        this.Quantidade = model.Quantidade;
+        if(this.Nome != model.Nome) this.Nome = model.Nome;
+        if(this.Quantidade != model.Quantidade) this.Quantidade = model.Quantidade;
+        if(this.Valor != model.Valor) this.Valor = model.Valor; 
     }
 }

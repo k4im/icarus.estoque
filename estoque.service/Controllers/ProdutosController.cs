@@ -128,7 +128,7 @@ public class ProdutosController : ControllerBase
     /// <response code="400">BadRequest, informa o campo que está errado no modelo</response>
     /// <response code="500">Informa que algo deu errado do lado do servidor</response>
     [HttpPut("produto_atualizar/{id?}")]
-    [Authorize(Roles = "ADMIN")]
+    // [Authorize(Roles = "ADMIN")]
     public async Task<IActionResult> atualizarProduto(int? id, Produto model)
     {
         var currentUser = HttpContext.User.FindFirstValue(ClaimTypes.Name);
