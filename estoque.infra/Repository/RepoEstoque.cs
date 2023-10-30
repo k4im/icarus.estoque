@@ -53,7 +53,7 @@ public class RepoEstoque : IRepoEstoque
         try
         {
             using var db = new DataContext();
-            var produto = await db.Produtos.AsNoTracking()
+            var produto = await db.Produtos
                 .FirstOrDefaultAsync(x => x.Id == id);
             produto.atualizarProduto(model);
             await db.SaveChangesAsync();
