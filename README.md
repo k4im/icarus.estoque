@@ -8,7 +8,7 @@ Está trata-se da api utilizada para processos de estoque dos usuarios no projet
 
 
 
-## Endpoint para autenticação
+## Endpoints da API
 
 #### Realiza get em todos os produtos.
 
