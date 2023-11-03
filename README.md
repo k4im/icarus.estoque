@@ -46,6 +46,10 @@ Está trata-se da api utilizada para processos de estoque dos usuarios no projet
 | :-------- | :------- | :------------------------- |
 | `Resultado` | `int` | Parametro para mudança quantidade de resultados por pagina. |
 
+| Parametro Query | Tipo     | Descrição                |
+| :-------- | :------- | :------------------------- |
+| `filtro` | `string` | Parametro para pesquisar por nome. |
+
 
 #### Filtrar produto por id.
 
