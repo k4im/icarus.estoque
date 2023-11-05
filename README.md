@@ -155,5 +155,5 @@ Para rodar este projeto utilizando dotnet realize os seguintes comandos:
 Para rodar este projeto utilizando docker realize os seguintes comandos:
 
 ```bash
-  docker run --name=container_estoque -p 5112:5112 k4im/estoque:v0.1
+  docker run --name=container_estoque -p 5139:5139 k4im/estoque:v0.1
 ```
