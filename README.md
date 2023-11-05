@@ -107,7 +107,27 @@ Está trata-se da api utilizada para processos de estoque dos usuarios no projet
 | :-------- | :------- | :------------------------- |
 | `Id` | `int` | Parametro para selecionar produto. |
 
+## Environment Variables
 
+Realizei uma verificação referente as variaveis de ambiente configuraveis.
+
+
+`ASPNETCORE_ENVIRONMENT`
+
+`DB_CONNECTION`
+
+`RABBIT_MQ_USER`
+
+`RABBIT_MQ_PWD`
+
+#### DB_CONNECTION
+* Variavel responsavel por estar realizando a configuração de conexão com o banco de dados. A mesma pode ser configuravel através dos arquivos de configurações assim como repassando por argumentos na execução docker.
+
+#### RABBIT_MQ_USER
+* Variavel responsavel por estar repassando a configuração o usuario de acesso ao RabbitMQ.
+
+#### RABBIT_MQ_PWD 
+* Variavel responsavel por estar realizando a autenticação do usuario.
 
 ## Deployment dotnet
 
