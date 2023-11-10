@@ -10,7 +10,6 @@ builder.Services.AddSwaggerConfigurations();
 
 builder.Services.AddDependencies();
 
-builder.Services.AddHostedService<RabbitMQBackground>();
 builder.Services.AddJwtConfiguration(builder.Configuration);
 builder.Services.AddCors();
 builder.Services.AddHealthChecks();

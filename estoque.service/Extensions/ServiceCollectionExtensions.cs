@@ -69,7 +69,6 @@ public static class ServiceCollectionExtensions
         services.AddTransient<IRepoEstoque, RepoEstoque>();
         services.AddTransient<IMessagePublisher, MessagePublisher>();
         services.AddTransient<Logger>();
-        services.AddTransient<IMessageConsumer, MessageConsumer>();
         services.AddHttpContextAccessor();
         return services;
     }
